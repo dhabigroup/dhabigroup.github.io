@@ -79,9 +79,7 @@
     color: transparent !important;
 
 }
-#google_translate_element select:first-child {
-  background-color: yellow;
-}
+
 
 body {
   top: 0px!important;
