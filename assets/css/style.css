@@ -333,16 +333,16 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width: 767px) {
   .handle-preloader .animation-preloader .spinner {
-    height: 8em;
-    width: 8em;
+    height: 7em;
+    width: 7em;
   }
 }
 @media screen and (max-width: 500px) {
   .handle-preloader .animation-preloader .spinner {
-    height: 7em;
-    width: 7em;
+    height: 4em;
+    width: 4em;
   }
-  .handle-preloader .animation-preloader .txt-loading .letters-loading {font-size: 40px; letter-spacing: 10px;}
+  .handle-preloader .animation-preloader .txt-loading .letters-loading {font-size: 30px; letter-spacing: 7px;}
 }
 
 
