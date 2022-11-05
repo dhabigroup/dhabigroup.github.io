@@ -28,7 +28,30 @@
 <link href="assets/css/elpath.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
+<style>
+    
+    .goog-te-banner-frame {
+        display: none!important;
+    
+    }  
+   .goog-logo-link {
+    display:none !important;
+} 
+    
+.goog-te-gadget{
+    color: transparent !important;
+}
+.goog-te-combo{
+    margin-right: 32px!important;
+    margin-top: 15px!important;
+    color: wheat;
+    border-block-style: groove;
+    border-block-start-style: none;
+}
 
+
+
+</style>
 </head>
 
 
@@ -205,13 +228,15 @@
                                     </li>
                                      
                                     <li><a href="contact.html">Contact</a></li> 
+                                    
                                 </ul>
                             </div>
+
                         </nav>
-                        <div class="menu-right-content">
-                            <div class="search-box-outer search-toggler">
-                                <i class="icon-1"></i>
-                            </div>
+
+
+                         <div class="menu-right-content">
+                            <div id="google_translate_element"></div>
                             
                             <div class="nav-btn nav-toggler navSidebar-button">
                                 <i class="icon-2"></i>
@@ -247,6 +272,7 @@
 
         <!-- Mobile Menu  -->
         <div class="mobile-menu">
+
             <div class="menu-backdrop"></div>
             <div class="close-btn"><i class="fas fa-times"></i></div>
             
@@ -261,6 +287,7 @@
                         <li><a href="mailto:office@dhabigroup.ly">office@dhabigroup.ly</a></li>
                     </ul>
                 </div>
+
                 <div class="social-links">
                     <ul class="clearfix">
                         <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
@@ -856,10 +883,20 @@
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
-   
-       
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" ></script>
+   <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages : 'en,ar', autoDisplay: false}, 'google_translate_element');
+}
 
 </script>
+<script type="text/javascript" defer>
+    var xy=document.getElementsByClassName('goog-te-combo');
+for (item of xy) {
+  console.log(item);
+}
+</script>
+
 
 </body><!-- End of .page_wrapper -->
 
