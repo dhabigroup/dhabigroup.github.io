@@ -55,6 +55,7 @@
 
 
 </style>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 
@@ -893,9 +894,16 @@ function googleTranslateElementInit() {
 }
  
 </script>
-<script type="text/javascript" defer>
-    var lang = $(".goog-te-menu-value span:first").text();
-    console.log(lang); 
+<script type="text/javascript">
+     console.log('ss');
+    $(document).ready(function(){
+
+  $('.goog-te-combo').on('change',function(){
+       console.log('ss');
+    }); 
+
+}); 
+   
 </script>
 
 
