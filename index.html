@@ -195,8 +195,8 @@
                     <div class="logo-box">
                         <figure class="logo"><a href="index.html"><img src="assets/images/dhabilogo.png" alt=""></a></figure>
                     </div>
-                    
-
+                    <div style="display: none;" id="tr-mobile">
+                    <div id="google_translate_element">  </div>  </div>
                     <div class="menu-area">
                         <!--Mobile Navigation Toggler-->
                         <div class="mobile-nav-toggler">
@@ -870,8 +870,6 @@
         <!-- Scroll to top end -->
         
     </div>
-
-
     <!-- jequery plugins -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -903,7 +901,12 @@ function googleTranslateElementInit() {
     }); 
 
 }); 
-   
+   if ($(window).width() < 600) {
+  document.getElementById('tr-mobile').style.display='block';
+}
+else {
+   console.log('ok');
+}
 </script>
 
 
