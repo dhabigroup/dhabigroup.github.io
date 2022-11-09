@@ -55,7 +55,6 @@
 
 
 </style>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 
@@ -240,7 +239,7 @@
 
 
                          <div class="menu-right-content">
-                            <div id="google_translate_element"></div>
+<div style="display: none;" id="tr-web">  <div id="google_translate_element"></div></div>
                             
                             <div class="nav-btn nav-toggler navSidebar-button">
                                 <i class="icon-2"></i>
@@ -893,19 +892,15 @@ function googleTranslateElementInit() {
  
 </script>
 <script type="text/javascript">
-     console.log('ss');
-    $(document).ready(function(){
-
-  $('.goog-te-combo').on('change',function(){
-       console.log('ss');
-    }); 
-
-}); 
+    
    if ($(window).width() < 600) {
+    document.getElementById('tr-web').remove();
   document.getElementById('tr-mobile').style.display='block';
 }
-else {
-   console.log('ok');
+else  if ($(window).width() > 600) {
+    console.log('web-version');
+     document.getElementById('tr-mobile').remove();
+   document.getElementById('tr-web').style.display='block';
 }
 </script>
 
