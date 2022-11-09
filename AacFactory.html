@@ -28,7 +28,33 @@
 <link href="assets/css/elpath.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
+<style>
+    
+    .goog-te-banner-frame {
+        display: none!important;
+    
+    }  
+   .goog-logo-link {
+    display:none !important;
+} 
+    
+.goog-te-gadget{
+    color: transparent !important;
+}
+.goog-te-combo{
+    margin-right: 32px!important;
+    margin-top: 15px!important;
+    color: wheat;
+    border-block-style: groove;
+    border-block-start-style: none;
+    background-color: #272727;
+}
+#goog-gt-tt{
+    display: none!important;
+}
 
+
+</style>
 </head>
 
 
@@ -168,6 +194,8 @@
                     <div class="logo-box">
                         <figure class="logo"><a href="index.html"><img src="assets/images/dhabilogo.png" alt=""></a></figure>
                     </div>
+                    <div style="display: none;" id="tr-mobile">
+                    <div id="google_translate_element">  </div>  </div>  
                     <div class="menu-area">
                         <!--Mobile Navigation Toggler-->
                         <div class="mobile-nav-toggler">
@@ -209,9 +237,9 @@
                             </div>
                         </nav>
                         <div class="menu-right-content">
-                            <div class="search-box-outer search-toggler">
-                                <i class="icon-1"></i>
-                            </div>
+                            <div id="google_translate_element"></div>
+                            <div style="display: none;" id="tr-web">
+                    <div id="google_translate_element">  </div>  </div>
                             <div class="nav-btn nav-toggler navSidebar-button">
                                 <i class="icon-2"></i>
                             </div>
@@ -452,7 +480,25 @@ The philosophy of this cooperation is to deliver a manufacturing system to our c
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
-
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" ></script>
+   <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages : 'en,ar', autoDisplay: false}, 'google_translate_element');
+}
+ 
+</script>
+<script type="text/javascript">
+    
+   if ($(window).width() < 600) {
+    document.getElementById('tr-web').remove();
+  document.getElementById('tr-mobile').style.display='block';
+}
+else  if ($(window).width() > 600) {
+    console.log('web-version');
+     document.getElementById('tr-mobile').remove();
+   document.getElementById('tr-web').style.display='block';
+}
+</script>
 </body><!-- End of .page_wrapper -->
 
 <!-- Mirrored from azim.commonsupport.com/Inventarc/project-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Oct 2022 14:32:23 GMT -->
