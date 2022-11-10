@@ -206,31 +206,31 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="index.html">Home</a>
+                                    <li class="notranslate" class="current dropdown"><a href="index.html">Home</a>
                                         
                                     </li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li class="dropdown"><a href="service.html">Services</a>
+                                    <li><a class="notranslate" href="about.html">About</a></li>
+                                    <li class="dropdown"><a class="notranslate" href="service.html">Services</a>
                                         <ul>
-                                            <li><a href="service.html">Our Services</a></li>
-                                            <li><a href="service.html#dhabiservices">AAC</a></li>
-                                            <li><a href="service.html#dhabiservices">Food and Beverage</a></li>
-                                            <li><a href="service.html#dhabiservices">Furniture</a></li>
-                                            <li><a href="service.html#dhabiservices">Retail and Hospitality</a></li>
+                                            <li><a class="notranslate" href="service.html">Our Services</a></li>
+                                            <li><a class="notranslate" href="service.html#dhabiservices">AAC</a></li>
+                                            <li><a class="notranslate" href="service.html#dhabiservices">Food and Beverage</a></li>
+                                            <li><a class="notranslate" href="service.html#dhabiservices">Furniture</a></li>
+                                            <li><a class="notranslate" href="service.html#dhabiservices">Retail and Hospitality</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">Projects</a>
-                                     <ul> <li><a href="AacFactory.html">AAC Factory</a></li> 
-                                     <li><a href="FoodAndBeverage.html">Food & Beverage</a></li> 
-                                     <li><a href="Furniture.html">Furniture</a></li> 
-                                     <li><a href="Retail.html">Retail & Hospitality</a></li>  
+                                    <li class="dropdown"><a class="notranslate" href="#">Projects</a>
+                                     <ul> <li><a class="notranslate" href="AacFactory.html">AAC Factory</a></li> 
+                                     <li><a class="notranslate" href="FoodAndBeverage.html">Food & Beverage</a></li> 
+                                     <li><a class="notranslate" href="Furniture.html">Furniture</a></li> 
+                                     <li><a class="notranslate" href="Retail.html">Retail & Hospitality</a></li>  
                                      </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#blog">Blog</a>
+                                    <li class="notranslate" class="dropdown"><a href="#blog">Blog</a>
                                         
                                     </li>
                                      
-                                    <li><a href="contact.html">Contact</a></li> 
+                                    <li><a class="notranslate" id="contact-us" href="contact.html">Contact</a></li> 
                                     
                                 </ul>
                             </div>
@@ -260,9 +260,7 @@
                             <!--Keep This Empty / Menu will come through Javascript-->
                         </nav>
                         <div class="menu-right-content">
-                            <div class="search-box-outer search-toggler">
-                                <i class="icon-1"></i>
-                            </div>
+                            
                             <div class="nav-btn nav-toggler navSidebar-button">
                                 <i class="icon-2"></i>
                             </div>
@@ -707,7 +705,7 @@
             <center>
             <div class="large-container">
                 <div class="sec-title centred">
-                    <span class="sub-title">News</span>
+                    <span id="our-news" class="sub-title">News</span>
                     <h2>Our Latest News</h2>
                 </div>
                 <div class="row clearfix">
@@ -901,7 +899,18 @@ else  if ($(window).width() > 600) {
     console.log('web-version');
      document.getElementById('tr-mobile').remove();
    document.getElementById('tr-web').style.display='block';
+   
 }
+
+</script>
+<script type="text/javascript">
+   /* document.getElementById('contact-us').innerText="CONTACT";
+    setTimeout(() => {  if(document.getElementById('contact-us').innerText="اتصال"){
+        document.getElementById('contact-us').innerText="CONTACT";
+    } }, 4000);*/
+        
+    
+    
 </script>
 
 
