@@ -363,17 +363,17 @@
                 <div class="owl-carousel owl-theme owl-dots-none owl-nav-none" id="sync2">
                     <div class="single-item">
                         <span class="count-text">01</span>
-                        <h6>City</h6>
+                        <h6 id="our-cit">City</h6>
                         <p>Tripoli - Libya </p>
                     </div>
                     <div class="single-item">
                         <span class="count-text">02</span>
-                        <h6>Address</h6>
+                        <h6 id="our-addr">Address</h6>
                         <p>Ain Zara - Mashtal Road</p>
                     </div>
                     <div class="single-item">
                         <span class="count-text">03</span>
-                        <h6>Number</h6>
+                        <h6 id="our-numb">Number</h6>
                         <p>+218 (91) 220 50 50</p>
                     </div>
                     <div class="single-item">
@@ -455,7 +455,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                         <div class="content-box p_relative mr_50">
                             <div class="sec-title">
-                                <span class="sub-title">GET TO KNOW</span>
+                                <span id="get-to-know" class="sub-title">GET TO KNOW</span>
                                 <h2>Your Trusted <span>Holding <br />Company</span></h2>
                             </div>
                             <div class="text">
@@ -660,7 +660,7 @@
                     </div>
                 </div>
                 <div class="more-btn centred">
-                    <a href="FoodAndBeverage.html" class="theme-btn btn-one">View All Pojects</a>
+                    <a href="FoodAndBeverage.html" class="theme-btn btn-one">View All Projects</a>
                 </div>
             </div>
         </section>
@@ -879,10 +879,21 @@ else  if ($(window).width() > 600) {
 
 </script>
 <script type="text/javascript">
-   /* document.getElementById('contact-us').innerText="CONTACT";
-    setTimeout(() => {  if(document.getElementById('contact-us').innerText="اتصال"){
-        document.getElementById('contact-us').innerText="CONTACT";
-    } }, 4000);*/
+    setTimeout(() => {  
+        if(document.getElementById('our-numb').innerText="رقم"){
+        document.getElementById('our-numb').innerText="الرقم";
+    };
+        if(document.getElementById('our-addr').innerText="تبوك"){
+        document.getElementById('our-addr').innerText="العنوان ";
+    };
+        if(document.getElementById('our-cit').innerText="مدينة"){
+        document.getElementById('our-cit').innerText="المدينة";
+    };
+        if(document.getElementById('get-to-know').innerText="بدأ أن يفهم"){
+        document.getElementById('get-to-know').innerText="تعرف علينا ";
+    };
+
+     }, 4000);
         
     
     
