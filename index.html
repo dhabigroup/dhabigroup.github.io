@@ -467,7 +467,7 @@
                                 <div class="quote-box"><img src="assets/images/icons/icon-1.svg" alt=""></div>
                                 <div class="inner">
                                     <figure class="author-thumb"><img style="width:90% !important" src="assets/images/ceo.jpg" alt=""></figure>
-                                    <p>“ Dhabi Group was founded by the visionary and trend-setting entrepreneur, Abdulrzag Elboaishi, along with a team of dedicated professionals. “</p>
+                                    <p>“ <span id="dhabifounded">Dhabi Group</span> was founded by the visionary and trend-setting entrepreneur, Abdulrzag Elboaishi, along with a team of dedicated professionals. “</p>
                                     <div class="designation">CEO - <span>Abdulrzag Elboaishi</span></div>
                                 </div>
                             </div>
@@ -901,6 +901,9 @@ else  if ($(window).width() > 600) {
 
     if(document.getElementById('dbname2').innerText="مجموعة ابوظبي"){
         document.getElementById('dbname2').innerText="مجموعة ظبي ";
+    };
+    if(document.getElementById('dhabifounded').innerText="مجموعة ابوظبي"){
+        document.getElementById('dhabifounded').innerText="تأسست مجموعة ظبي";
     }; 
 
      }, 4000);
