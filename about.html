@@ -307,7 +307,7 @@
                 <div class="bg-layer" style="background-image: url(assets/images/background/page-title.jpg);"></div>
                 <div class="large-container">
                     <div class="title-box">
-                        <h2>ABOUT</h2>
+                        <h2 id="about-nabtha">ABOUT</h2>
                     </div>
                 </div>
             </div>
@@ -561,6 +561,20 @@ else  if ($(window).width() > 600) {
      document.getElementById('tr-mobile').remove();
    document.getElementById('tr-web').style.display='block';
 }
+</script>
+<script type="text/javascript">
+    setTimeout(() => {  
+        if(document.getElementById('about-nabtha').innerText="حول"){
+        document.getElementById('about-nabtha').innerText="نبذة على الظبي ";
+    };
+      
+ 
+    
+
+     }, 4000);
+        
+    
+    
 </script>
 </body><!-- End of .page_wrapper -->
 
