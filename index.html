@@ -338,7 +338,7 @@
                     <div class="auto-container">
                         <div class="content-box">
                             <div class="icon-box"><img src="assets/images/dhabilogo.png" alt=""></div>
-                            <h2><h2 id="dbname2">Dhabi Group</h2> <br /><span>Construction, lifestyle & agropreneurship</span> </h2>
+                            <h2><h2 class="notranslate" id="dbname2">Dhabi Group</h2> <br /><span>Construction, lifestyle & agropreneurship</span> </h2>
                             <div class="btn-box">
                                 <a href="FoodAndBeverage.html" class="theme-btn btn-one">View The Projects</a>
                             </div>
@@ -381,46 +381,6 @@
                         <h6>Email</h6>
                         <p>office@dhabigroup.ly</p>
                     </div>
-                    <div class="single-item">
-                        <span class="count-text">01</span>
-                        <h6>Apex</h6>
-                        <p>San Diego, California</p>
-                    </div>
-                    <div class="single-item">
-                        <span class="count-text">02</span>
-                        <h6>Minimal</h6>
-                        <p>San Diego, California</p>
-                    </div>
-                    <div class="single-item">
-                        <span class="count-text">03</span>
-                        <h6>Luxury</h6>
-                        <p>San Diego, California</p>
-                    </div>
-                    <div class="single-item">
-                        <span class="count-text">04</span>
-                        <h6>Delux</h6>
-                        <p>San Diego, California</p>
-                    </div>
-                    <div class="single-item">
-                        <span class="count-text">01</span>
-                        <h6>Apex</h6>
-                        <p>San Diego, California</p>
-                    </div>
-                    <div class="single-item">
-                        <span class="count-text">02</span>
-                        <h6>Minimal</h6>
-                        <p>San Diego, California</p>
-                    </div>
-                    <div class="single-item">
-                        <span class="count-text">03</span>
-                        <h6>Luxury</h6>
-                        <p>San Diego, California</p>
-                    </div>
-                    <div class="single-item">
-                        <span class="count-text">04</span>
-                        <h6>Delux</h6>
-                        <p>San Diego, California</p>
-                    </div>
                 </div>
             </div>
             <ul class="social-links clearfix">
@@ -448,7 +408,7 @@
                             <figure data-animation-text class="overlay-anim-white-bg image p_relative d_block" data-animation="overlay-animation"><img src="assets/images/resource/about-1.jpg" alt=""></figure>
                             <div class="text-inner">
                                 <h6 id="dhabi-name">Dhabi Group</h6>
-                                <p>Trpoli, Libya</p>
+                                <p><span id="Tripoli">Trpoli</span>, Libya</p>
                             </div>
                         </div>
                     </div>
@@ -467,8 +427,8 @@
                                 <div class="quote-box"><img src="assets/images/icons/icon-1.svg" alt=""></div>
                                 <div class="inner">
                                     <figure class="author-thumb"><img style="width:90% !important" src="assets/images/ceo.jpg" alt=""></figure>
-                                    <p>“ <span id="dhabifounded">Dhabi Group</span> was founded by the visionary and trend-setting entrepreneur, Abdulrzag Elboaishi, along with a team of dedicated professionals. “</p>
-                                    <div class="designation">CEO - <span>Abdulrzag Elboaishi</span></div>
+                                    <p>“ <span id="dhabifounded">Dhabi Group</span> was founded by the visionary and trend-setting entrepreneur, <span id="abdultwo">Abdulrzag Elboaishi</span>, along with a team of dedicated professionals. “</p>
+                                    <div class="designation">CEO - <span id="abdulone">Abdulrzag Elboaishi</span></div>
                                 </div>
                             </div>
                         </div>
@@ -718,7 +678,7 @@
                                         <li><i class="icon-16"></i><a href="https://www.maghress.com/annoukhba/74696?fbclid=IwAR3LZuuxlcKQmp7NsFCV3tyoENmFuuyIn1UJpTqWClYR83Brb5GzFFCw3eo">Al Nokhba &nbsp,</a></li>
                                         <li>01/09/2019</li>
                                     </ul>
-                                    <h3><a href="https://www.maghress.com/annoukhba/74696?fbclid=IwAR3LZuuxlcKQmp7NsFCV3tyoENmFuuyIn1UJpTqWClYR83Brb5GzFFCw3eo">Morocco provides high-class economic tourist facilities, and AlBouaishi is the one who leads this evolution...</h3>
+                                    <h3><a href="https://www.maghress.com/annoukhba/74696?fbclid=IwAR3LZuuxlcKQmp7NsFCV3tyoENmFuuyIn1UJpTqWClYR83Brb5GzFFCw3eo">Morocco provides high-class economic tourist facilities, and <span id="abdulthreebou">AlBouaishi</span> is the one who leads this evolution...</h3>
                                         <p>هناك رجالات يعملون في الخفاء ، يوفرون على كاريزما قوية من أجل النهوض بالاقتصاد الوطني بدون ضوضاء ولا ضجيج ، يعملون بصمت هادئ ، يخططون ، يرسمون الآفاق بحكمة</p>
                                 </div>
                                 <div class="overlay-content">
@@ -879,6 +839,9 @@ else  if ($(window).width() > 600) {
 
 </script>
 <script type="text/javascript">
+   
+</script>
+<script type="text/javascript">
     setTimeout(() => {  
         if(document.getElementById('our-numb').innerText="رقم"){
         document.getElementById('our-numb').innerText="الرقم";
@@ -899,12 +862,27 @@ else  if ($(window).width() > 600) {
         document.getElementById('dbname').innerText="مجموعة ظبي ";
     };
 
-    if(document.getElementById('dbname2').innerText="مجموعة ابوظبي"){
-        document.getElementById('dbname2').innerText="مجموعة ظبي ";
-    };
+    
     if(document.getElementById('dhabifounded').innerText="مجموعة ابوظبي"){
         document.getElementById('dhabifounded').innerText="تأسست مجموعة ظبي";
     }; 
+    if(document.getElementById('abdulone').innerText="البويشي"){
+        document.getElementById('abdulone').innerText="عبد الرزاق البوعيشي";
+    };
+
+    if(document.getElementById('abdultwo').innerText="البويشي"){
+        document.getElementById('abdultwo').innerText="عبد الرزاق البوعيشي";
+    };
+
+    if(document.getElementById('Tripoli').innerText="تربولي"){
+        document.getElementById('Tripoli').innerText="طرابلس";
+    };
+
+    if(document.getElementById('abdulthreebou').innerText="البويشي"){
+        document.getElementById('abdulthreebou').innerText="البوعيشي";
+    };
+ 
+    
 
      }, 4000);
         
