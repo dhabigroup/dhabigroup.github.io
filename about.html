@@ -338,13 +338,13 @@
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                         <div class="content-box p_relative mr_50">
                             <div class="sec-title">
-                                <span class="sub-title">GET TO KNOW</span>
+                                <span id="get-to-know" class="sub-title">GET TO KNOW</span>
                                 <h2>Your Trusted <span>Holding <br />Company</span></h2>
                             </div>
                             <div class="text">
                                  <p>Dhabi Group is a leading Libyan company in Construction, lifestyle development and agropreneurship.</p>
                                 <p>It has gained worldwide recognition for trend-setting establishments and entrepreneurial projects through developing and managing lifestyle brands. Restaurants created by the company combine international gastronomic talent with fresh, internationally sourced produce.</p>
-                                <p>In addition to redefining the country’s urban industry, Dhabi Group is leading the projects that are all exclusive in Libya.</p>
+                                <p>In addition to redefining the country’s urban industry, <span id="dbname">Dhabi Group</span> is leading the projects that are all exclusive in Libya.</p>
                             </div>
                             <div class="btn-box">
                                 <a href="about.html" class="theme-btn btn-one">All Informamtion</a>
@@ -408,12 +408,12 @@
                     <div class="testimonial-block-two">
                         <div class="inner-box">
                             <div class="quote">“</div>
-                            <p>Dhabi Group was founded by the visionary and trend-setting entrepreneur, AbdulRazak Al Bouaichi, along with a team of dedicated professionals.</p><p>
+                            <p>Dhabi Group was founded by the visionary and trend-setting entrepreneur, <span id="abdulone">AbdulRazak Al Bouaichi</span>, along with a team of dedicated professionals.</p><p>
 Since 30 years ago, Mr Abdulrazak started with Green plain for general trading and from there more activities came along with the love of business, it evolved to a multifunctioning company to be running all kind of sectors.It has since gained global recognition and praise.
 </p>
                             <div class="author-box">
                                 <figure class="author-thumb"><img src="assets/images/ceo.jpg" alt=""></figure>
-                                <h4>AbdulRazak Al Bouaichi</h4>
+                                <h4 id="abdultwo">AbdulRazak Al Bouaichi</h4>
                                 <span class="designation">CEO</span>
                             </div>
                         </div>
@@ -567,8 +567,21 @@ else  if ($(window).width() > 600) {
         if(document.getElementById('about-nabtha').innerText="حول"){
         document.getElementById('about-nabtha').innerText="نبذة على الظبي ";
     };
+        if(document.getElementById('get-to-know').innerText="بدأ أن يفهم"){
+        document.getElementById('get-to-know').innerText="تعرف علينا ";
+    };
+        if(document.getElementById('dbname').innerText="مجموعة ابوظبي"){
+        document.getElementById('dbname').innerText="مجموعة ظبي ";
+    };
+        if(document.getElementById('abdulone').innerText="البويشي"){
+        document.getElementById('abdulone').innerText="عبد الرزاق البوعيشي";
+    };
+
+        if(document.getElementById('abdultwo').innerText="البويشي"){
+        document.getElementById('abdultwo').innerText="عبد الرزاق البوعيشي";
+    };
     }, 4000);
-    
+
 
 
         
