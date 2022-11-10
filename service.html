@@ -303,7 +303,7 @@
                 <div class="bg-layer" style="background-image: url(assets/images/background/page-title-2.jpg);"></div>
                 <div class="large-container">
                     <div class="title-box">
-                        <h2>Services</h2>
+                        <h2 style="letter-spacing: 0em!important;">Services</h2>
                     </div>
                 </div>
             </div>
@@ -325,7 +325,7 @@
                             <div class="text">
                                 <p>Dhabi Group is a leading Libyan company in Construction, lifestyle development and agropreneurship.</p>
                                 <p>It has gained worldwide recognition for trend-setting establishments and entrepreneurial projects through developing and managing lifestyle brands. Restaurants created by the company combine international gastronomic talent with fresh, internationally sourced produce.</p>
-                                <p>In addition to redefining the country’s urban industry, Dhabi Group is leading the projects that are all exclusive in Libya.</p>
+                                <p>In addition to redefining the country’s urban industry, <span id="dbname">Dhabi Group</span> is leading the projects that are all exclusive in Libya.</p>
                                 <a href="about.html" class="theme-btn btn-one">About Info</a>
                             </div>
                         </div>
@@ -356,8 +356,8 @@
                         <div class="service-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <a href="AacFactory.html" class="inner-box">
                                 <div class="icon-box"><img style="width: 80px;height: 80px;" src="assets/images/browaac.png" alt=""></div>
-                                <h4>Construction AAC Factory</h4>
-                                <p>Dhabi Construction has focused on real estate and construction industry anticipating the construction post revolution.
+                                <h4>Construction <span class="notranslate"> AAC </span> Factory</h4>
+                                <p><span >ALDhabi</span> Construction has focused on real estate and construction industry anticipating the construction post revolution.
 </p><br><p>ACC factory work has started
 in a cooperation with HESS ACC Systems.
 </p>
@@ -369,7 +369,7 @@ in a cooperation with HESS ACC Systems.
                             <a href="Retail.html" class="inner-box">
                                 <div class="icon-box"><img style="width: 80px;height: 80px;" src="assets/images/browretail.png" alt=""></div>
                                 <h4>Retail and Hospitality</h4>
-                                <p>Dhabi Group offers the opportunity to enhance a customer’s hospitality experience with creativity, while maintaining established standards. The role may include managing aspects of any hospitality establishment such as restaurants, hotels, casinos, museums and gift shops.</p>
+                                <p><span id="dbname2">Dhabi Group</span> offers the opportunity to enhance a customer’s hospitality experience with creativity, while maintaining established standards. The role may include managing aspects of any hospitality establishment such as restaurants, hotels, casinos, museums and gift shops.</p>
                             </a>
                         </div>
                     </div>
@@ -522,6 +522,23 @@ else  if ($(window).width() > 600) {
      document.getElementById('tr-mobile').remove();
    document.getElementById('tr-web').style.display='block';
 }
+</script>
+<script type="text/javascript">
+    setTimeout(() => {  
+        if(document.getElementById('dbname').innerText="مجموعة ابوظبي"){
+        document.getElementById('dbname').innerText="مجموعة ظبي ";
+    };
+    if(document.getElementById('dbname2').innerText="مجموعة ابوظبي"){
+        document.getElementById('dbname2').innerText="تقدم مجموعة ظبي ";
+    };
+        
+    }, 4000);
+
+
+
+        
+    
+    
 </script>
 </body><!-- End of .page_wrapper -->
 
