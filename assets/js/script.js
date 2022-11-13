@@ -66,6 +66,11 @@
          document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
      document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
     };
+    if(document.getElementById('homie').innerText="Main"){
+        document.getElementById('homie').innerText="اHome";
+         document.getElementById('pneu-dabii').innerText="AAC";
+     document.getElementById('pneu-dabiii').innerText="AAC";
+    };
 
 		$('.mobile-menu .menu-box').mCustomScrollbar();
 		
