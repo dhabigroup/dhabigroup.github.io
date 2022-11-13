@@ -4,7 +4,7 @@
  
 	$("body").on("change", "#google_translate_element select", function (e) {
  
-   var xesc=$(this).find(":selected").val();
+   var xesc=$(this).find(":selected").val(); 
    console.log(xesc);
   
    if(xesc=="ar"){
