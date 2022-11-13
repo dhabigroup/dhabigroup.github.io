@@ -42,10 +42,15 @@
 
 	//Mobile Nav Hide Show
 	if($('.mobile-menu').length){
-		
+		if(document.getElementById('homie').innerText="مسكن"){
+        document.getElementById('homie').innerText="الرئيسية";
+    };
+     document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+     document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
 		$('.mobile-menu .menu-box').mCustomScrollbar();
 		
 		var mobileMenuContent = $('.main-header .menu-area .main-menu').html();
+		console.log(mobileMenuContent);
 		$('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
 		$('.sticky-header .main-menu').append(mobileMenuContent);
 		
