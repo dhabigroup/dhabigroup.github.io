@@ -1,7 +1,26 @@
 (function($) {
 	
 	"use strict";
-	
+ 
+	$("body").on("change", "#google_translate_element select", function (e) {
+ 
+   var xesc=$(this).find(":selected").val();
+   console.log(xesc);
+  
+   if(xesc=="ar"){
+    document.getElementById('pneu-dabi').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+        document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+     document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+
+   }
+   
+   if(xesc=="en"){
+    document.getElementById('pneu-dabi').innerText="AAC Factory";
+        document.getElementById('pneu-dabii').innerText="AAC Factory";
+     document.getElementById('pneu-dabiii').innerText="AAC Factory";
+      document.getElementById('homie').innerText="Home";
+   }
+});
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
 		if($('.loader-wrap').length){
@@ -44,9 +63,10 @@
 	if($('.mobile-menu').length){
 		if(document.getElementById('homie').innerText="مسكن"){
         document.getElementById('homie').innerText="الرئيسية";
-    };
-     document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+         document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
      document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+    };
+
 		$('.mobile-menu .menu-box').mCustomScrollbar();
 		
 		var mobileMenuContent = $('.main-header .menu-area .main-menu').html();
