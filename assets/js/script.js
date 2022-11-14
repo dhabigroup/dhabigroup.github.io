@@ -7,7 +7,8 @@
    console.log(xesc);
   
    if(xesc=="ar"){
-   	document.getElementById('align-txts').style.paddingLeft='47%';
+   	document.getElementById('align-txts').style.paddingLeft='43%';
+   	document.getElementById('align-txtts').style.paddingLeft='43%';
     document.getElementById('pneu-dabi').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
         document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
      document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
@@ -17,6 +18,7 @@
    
    if(xesc=="en"){
    	document.getElementById('align-txts').style.paddingLeft='0%';
+   	document.getElementById('align-txtts').style.paddingLeft='0%';
    	document.getElementById('dbname').innerText="Dhabi Group";
     document.getElementById('pneu-dabi').innerText="AAC Factory";
         document.getElementById('pneu-dabii').innerText="AAC Factory";
