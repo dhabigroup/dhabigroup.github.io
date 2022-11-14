@@ -1,13 +1,13 @@
 (function($) {
 	
 	"use strict";
- 
-	$("body").on("change", "#google_translate_element select", function (e) {
- 
+ 	$("body").on("change", "#google_translate_element select", function (e) {
+
    var xesc=$(this).find(":selected").val(); 
    console.log(xesc);
   
    if(xesc=="ar"){
+   	document.getElementById('align-txts').style.paddingLeft='47%';
     document.getElementById('pneu-dabi').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
         document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
      document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
@@ -16,6 +16,7 @@
    }
    
    if(xesc=="en"){
+   	document.getElementById('align-txts').style.paddingLeft='0%';
    	document.getElementById('dbname').innerText="Dhabi Group";
     document.getElementById('pneu-dabi').innerText="AAC Factory";
         document.getElementById('pneu-dabii').innerText="AAC Factory";
@@ -77,7 +78,7 @@
 		$('.mobile-menu .menu-box').mCustomScrollbar();
 		
 		var mobileMenuContent = $('.main-header .menu-area .main-menu').html();
-		console.log(mobileMenuContent);
+		//console.log(mobileMenuContent);
 		$('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
 		$('.sticky-header .main-menu').append(mobileMenuContent);
 		
