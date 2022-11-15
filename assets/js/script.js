@@ -20,10 +20,11 @@ document.getElementById('boutiques').style.paddingLeft='19%';
      document.getElementById('align-tx3').style.paddingLeft='6%';
    	  document.getElementById('vkkasian').style.paddingLeft='14%';
    	  document.getElementById('OXY1').style.paddingLeft='65%';
-    document.getElementById('pneu-dabi').innerText="مصنع الخرسانة الهوائية ";
+    
      document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية ";
      document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية ";
      document.getElementById('homie').innerText=" الرئيسية";
+     document.getElementById('pneu-dabi').innerText="مصنع الخرسانة الهوائية ";
 
    }
    
@@ -41,11 +42,14 @@ document.getElementById('boutiques').style.paddingLeft='0%';
      document.getElementById('align-tx3').style.paddingLeft='0%';
  document.getElementById('vkkasian').style.paddingLeft='0%';
  document.getElementById('OXY1').style.paddingLeft='0%';
-   	document.getElementById('dbname').innerText="Dhabi Group";
-    document.getElementById('pneu-dabi').innerText="AAC Factory";
+   	
+   
         document.getElementById('pneu-dabii').innerText="AAC Factory";
      document.getElementById('pneu-dabiii').innerText="AAC Factory";
       document.getElementById('homie').innerText="Home";
+     
+       document.getElementById('pneu-dabi').innerText="AAC Factory";
+        document.getElementById('dbname').innerText="Dhabi Group";
 
    }
 });
