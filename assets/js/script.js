@@ -19,9 +19,10 @@ document.getElementById('boutiques').style.paddingLeft='19%';
     document.getElementById('align-tx2').style.paddingLeft='24%';
      document.getElementById('align-tx3').style.paddingLeft='6%';
    	  document.getElementById('vkkasian').style.paddingLeft='14%';
-    document.getElementById('pneu-dabi').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
-     document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
-     document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+   	  document.getElementById('OXY1').style.paddingLeft='65%';
+    document.getElementById('pneu-dabi').innerText="مصنع الخرسانة الهوائية ";
+     document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية ";
+     document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية ";
      document.getElementById('homie').innerText=" الرئيسية";
 
    }
@@ -39,6 +40,7 @@ document.getElementById('boutiques').style.paddingLeft='0%';
      document.getElementById('align-tx2').style.paddingLeft='0%';
      document.getElementById('align-tx3').style.paddingLeft='0%';
  document.getElementById('vkkasian').style.paddingLeft='0%';
+ document.getElementById('OXY1').style.paddingLeft='0%';
    	document.getElementById('dbname').innerText="Dhabi Group";
     document.getElementById('pneu-dabi').innerText="AAC Factory";
         document.getElementById('pneu-dabii').innerText="AAC Factory";
@@ -89,8 +91,8 @@ document.getElementById('boutiques').style.paddingLeft='0%';
 	if($('.mobile-menu').length){
 		if(document.getElementById('homie').innerText="مسكن"){
         document.getElementById('homie').innerText="الرئيسية";
-         document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
-     document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+         document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية ";
+     document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية ";
     };
     if(document.getElementById('homie').innerText="Main"){
         document.getElementById('homie').innerText="اHome";
