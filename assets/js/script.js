@@ -100,8 +100,7 @@ document.getElementById('boutiques').style.paddingLeft='0%';
     };
     if(document.getElementById('homie').innerText="Main"){
         document.getElementById('homie').innerText="اHome";
-         document.getElementById('pneu-dabii').innerText="AAC";
-     document.getElementById('pneu-dabiii').innerText="AAC";
+        
     };
 
 		$('.mobile-menu .menu-box').mCustomScrollbar();
