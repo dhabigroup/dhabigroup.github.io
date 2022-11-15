@@ -7,6 +7,7 @@
    console.log(xesc);
   
    if(xesc=="ar"){
+   	document.getElementById('Exxonmobile1').style.paddingLeft='80%';
    	document.getElementById('Caddesi1').style.paddingLeft='21%';
 document.getElementById('ankara1').style.paddingLeft='23%'; 
 document.getElementById('izmir1').style.paddingLeft='23%';
@@ -26,6 +27,7 @@ document.getElementById('boutiques').style.paddingLeft='19%';
    }
    
    if(xesc=="en"){
+   	document.getElementById('Exxonmobile1').style.paddingLeft='0%';
    	document.getElementById('Caddesi1').style.paddingLeft='0%';
 document.getElementById('ankara1').style.paddingLeft='0%'; 
 document.getElementById('izmir1').style.paddingLeft='0%';
