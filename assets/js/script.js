@@ -7,23 +7,42 @@
    console.log(xesc);
   
    if(xesc=="ar"){
+   	document.getElementById('Caddesi1').style.paddingLeft='21%';
+document.getElementById('ankara1').style.paddingLeft='23%'; 
+document.getElementById('izmir1').style.paddingLeft='23%';
+document.getElementById('boutiques').style.paddingLeft='19%';
    	document.getElementById('align-txts').style.paddingLeft='43%';
    	document.getElementById('align-txtts').style.paddingLeft='43%';
+   	document.getElementById('align-tx').style.paddingLeft='23%';
+    document.getElementById('align-tx1').style.paddingLeft='25%';
+    document.getElementById('align-tx2').style.paddingLeft='24%';
+     document.getElementById('align-tx3').style.paddingLeft='6%';
+   	  document.getElementById('vkkasian').style.paddingLeft='14%';
     document.getElementById('pneu-dabi').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
-        document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
+     document.getElementById('pneu-dabii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
      document.getElementById('pneu-dabiii').innerText="مصنع الأسمنت المعالج و المشبع بالهواء";
      document.getElementById('homie').innerText=" الرئيسية";
 
    }
    
    if(xesc=="en"){
+   	document.getElementById('Caddesi1').style.paddingLeft='0%';
+document.getElementById('ankara1').style.paddingLeft='0%'; 
+document.getElementById('izmir1').style.paddingLeft='0%';
+document.getElementById('boutiques').style.paddingLeft='0%';
    	document.getElementById('align-txts').style.paddingLeft='0%';
    	document.getElementById('align-txtts').style.paddingLeft='0%';
+   	document.getElementById('align-tx').style.paddingLeft='0%';
+    document.getElementById('align-tx1').style.paddingLeft='0%';
+     document.getElementById('align-tx2').style.paddingLeft='0%';
+     document.getElementById('align-tx3').style.paddingLeft='0%';
+ document.getElementById('vkkasian').style.paddingLeft='0%';
    	document.getElementById('dbname').innerText="Dhabi Group";
     document.getElementById('pneu-dabi').innerText="AAC Factory";
         document.getElementById('pneu-dabii').innerText="AAC Factory";
      document.getElementById('pneu-dabiii').innerText="AAC Factory";
       document.getElementById('homie').innerText="Home";
+
    }
 });
 	//Hide Loading Box (Preloader)
