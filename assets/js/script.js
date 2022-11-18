@@ -5,15 +5,20 @@
 	var langss=document.getElementsByTagName('html')[0].lang;
 	console.log(langss);
 	if(langs=="ar"){
+		 if(document.getElementById('dhabi-name')){
+        document.getElementById('dhabi-name').innerText="مجموعة ظبي ";}
 	if(document.getElementById('pneu-dabiii')){
  	document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية "; 	
    	if(document.getElementById('pneu-dabii')){
  	document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية "; 	
-   	}}if(document.getElementById('homie')){
+   	}}
+   	if(document.getElementById('homie')){
 document.getElementById('homie').innerText="الرئيسية";}
    }
    	if(langs=="en"){
-   		
+   		if(document.getElementById('dhabi-name')){
+   document.getElementById('dhabi-name').innerText="Dhabi Group";}
+   
 	if(document.getElementById('pneu-dabiii')){
  	document.getElementById('pneu-dabiii').innerText="AAC Factory"; 	
    	if(document.getElementById('pneu-dabii')){
@@ -28,10 +33,22 @@ document.getElementById('homie').innerText="Main";}
     	langs=xesc;
   
    if(xesc=="ar"){
-  console.log(langs);
-	$('.mobile-menu').load(location.href + " .mobile-menu");
+   if(document.getElementById('agro-dabi'))
+   {
 
+   document.getElementById('agro-dabi').innerText="ss";
+	}
 
+ if(document.getElementById('agro-dabi2'))
+   {
+   document.getElementById('agro-dabi2').remove();
+	}
+
+if(document.getElementById('Tripoli')){
+        document.getElementById('Tripoli').innerText="طرابلس";
+    };
+ if(document.getElementById('dhabi-name')){
+        document.getElementById('dhabi-name').innerText="مجموعة ظبي ";}
 /*
 arabic settings config
 */
@@ -113,6 +130,9 @@ document.getElementById('abdultwo').innerText="عبد الرزاق البوعي�
      if(document.getElementById('dbname')){
        
         document.getElementById('dbname').innerText="مجموعة ظبي";}
+        if(document.getElementById('dbname2')){
+       
+        document.getElementById('dbname2').innerText="مجموعة ظبي";}
         if(document.getElementById('about-nabtha')){
  	document.getElementById('about-nabtha').innerText="نبذة على الظبي "; 	
    	}
@@ -207,6 +227,12 @@ if(document.getElementById('pneu-dabii')){
      if(document.getElementById('dbname')){
    document.getElementById('dbname').innerText="Dhabi Group";}
 }
+ if(document.getElementById('dbname2')){
+   document.getElementById('dbname2').innerText="Dhabi Group";
+}
+if(document.getElementById('dhabi-name')){
+   document.getElementById('dhabi-name').innerText="Dhabi Group";}
+
    /*
 arabic settings end
 */
