@@ -9,14 +9,19 @@
  	document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية "; 	
    	if(document.getElementById('pneu-dabii')){
  	document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية "; 	
-   	}}}
+   	}}if(document.getElementById('homie')){
+document.getElementById('homie').innerText="الرئيسية";}
+   }
    	if(langs=="en"){
    		
 	if(document.getElementById('pneu-dabiii')){
  	document.getElementById('pneu-dabiii').innerText="AAC Factory"; 	
    	if(document.getElementById('pneu-dabii')){
  	document.getElementById('pneu-dabii').innerText="AAC Factory"; 	
-   	}}}
+   	}}
+if(document.getElementById('homie')){
+document.getElementById('homie').innerText="Main";}
+   }
  	$("body").on("change", "#google_translate_element select", function (e) {
 
    var xesc=$(this).find(":selected").val(); 
@@ -96,14 +101,21 @@ if(document.getElementById('pneu-dabii')){
    	if(document.getElementById('pneu-dabi')){
  	document.getElementById('pneu-dabi').innerText="مصنع الخرسانة الهوائية "; 	
    	}
+   	if(document.getElementById('abdulone')){
+document.getElementById('abdulone').innerText="عبد الرزاق البوعيشي";}
 
+	if(document.getElementById('abdultwo')){
+document.getElementById('abdultwo').innerText="عبد الرزاق البوعيشي";}
  
        if(document.getElementById('homie')){
-      document.getElementById('homie').innerText="Main";
+      document.getElementById('homie').innerText="الرئيسية";
      }
      if(document.getElementById('dbname')){
        
         document.getElementById('dbname').innerText="مجموعة ظبي";}
+        if(document.getElementById('about-nabtha')){
+ 	document.getElementById('about-nabtha').innerText="نبذة على الظبي "; 	
+   	}
 
 
 /*Setting End*/
@@ -184,10 +196,13 @@ if(document.getElementById('pneu-dabii')){
    	if(document.getElementById('pneu-dabi')){
  	document.getElementById('pneu-dabi').innerText="AAC Factory"; 	
    	}
+   	if(document.getElementById('about-nabtha')){
+ 	document.getElementById('about-nabtha').innerText="About"; 	
+   	}
 
  
        if(document.getElementById('homie')){
-      document.getElementById('homie').innerText="Home";
+      document.getElementById('homie').innerText="الرئيسية";
      }
      if(document.getElementById('dbname')){
    document.getElementById('dbname').innerText="Dhabi Group";}
