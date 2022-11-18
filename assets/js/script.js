@@ -1,57 +1,200 @@
 (function($) {
 	
 	"use strict";
+	var langs='en' ;
+	var langss=document.getElementsByTagName('html')[0].lang;
+	console.log(langss);
+	if(langs=="ar"){
+	if(document.getElementById('pneu-dabiii')){
+ 	document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية "; 	
+   	if(document.getElementById('pneu-dabii')){
+ 	document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية "; 	
+   	}}}
+   	if(langs=="en"){
+   		
+	if(document.getElementById('pneu-dabiii')){
+ 	document.getElementById('pneu-dabiii').innerText="AAC Factory"; 	
+   	if(document.getElementById('pneu-dabii')){
+ 	document.getElementById('pneu-dabii').innerText="AAC Factory"; 	
+   	}}}
  	$("body").on("change", "#google_translate_element select", function (e) {
 
    var xesc=$(this).find(":selected").val(); 
-   console.log(xesc);
+    	langs=xesc;
   
    if(xesc=="ar"){
-   	document.getElementById('Exxonmobile1').style.paddingLeft='80%';
-   	document.getElementById('Caddesi1').style.paddingLeft='21%';
-document.getElementById('ankara1').style.paddingLeft='23%'; 
-document.getElementById('izmir1').style.paddingLeft='23%';
-document.getElementById('boutiques').style.paddingLeft='19%';
-   	document.getElementById('align-txts').style.paddingLeft='43%';
-   	document.getElementById('align-txtts').style.paddingLeft='43%';
-   	document.getElementById('align-tx').style.paddingLeft='23%';
-    document.getElementById('align-tx1').style.paddingLeft='25%';
-    document.getElementById('align-tx2').style.paddingLeft='24%';
-     document.getElementById('align-tx3').style.paddingLeft='6%';
-   	  document.getElementById('vkkasian').style.paddingLeft='14%';
-   	  document.getElementById('OXY1').style.paddingLeft='65%';
-    
-     document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية ";
-     document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية ";
-     document.getElementById('homie').innerText=" الرئيسية";
-     document.getElementById('pneu-dabi').innerText="مصنع الخرسانة الهوائية ";
+  console.log(langs);
+	$('.mobile-menu').load(location.href + " .mobile-menu");
+
+
+/*
+arabic settings config
+*/
+if(document.getElementById('Exxonmobile1')){
+ document.getElementById('Exxonmobile1').style.paddingLeft='80%';	
+   	}
+
+   		if(document.getElementById('Caddesi1')){
+ 	document.getElementById('Caddesi1').style.paddingLeft='21%';	
+   	}
+  
+  if(document.getElementById('ankara1')){
+ 	document.getElementById('ankara1').style.paddingLeft='23%'; 	
+   	}
+
+
+ if(document.getElementById('izmir1')){
+ 	document.getElementById('izmir1').style.paddingLeft='23%';
+   	}
+
+   	 if(document.getElementById('boutiques')){
+ 	document.getElementById('boutiques').style.paddingLeft='19%'; 	
+   	}
+
+   	 if(document.getElementById('align-txts')){
+ 	document.getElementById('align-txts').style.paddingLeft='43%'; 	
+   	}
+
+   	 if(document.getElementById('align-txtts')){
+ 	document.getElementById('align-txtts').style.paddingLeft='43%'; 	
+   	}
+
+if(document.getElementById('align-tx')){
+ 	document.getElementById('align-tx').style.paddingLeft='23%'; 	
+   	}
+
+   	if(document.getElementById('align-tx1')){
+ 	document.getElementById('align-tx').style.paddingLeft='25%'; 	
+   	}
+
+	if(document.getElementById('align-tx2')){
+ 	document.getElementById('align-tx').style.paddingLeft='24%'; 	
+   	}
+
+	if(document.getElementById('align-tx3')){
+ 	document.getElementById('align-tx').style.paddingLeft='6%'; 	
+   	}
+
+	
+
+   	if(document.getElementById('vkkasian')){
+ 	document.getElementById('vkkasian').style.paddingLeft='14%'; 	
+   	}
+
+   	if(document.getElementById('OXY1')){
+ 	document.getElementById('OXY1').style.paddingLeft='65%'; 	
+   	}
+
+if(document.getElementById('pneu-dabii')){
+ 	document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية "; 	
+   	}
+
+   	if(document.getElementById('pneu-dabiii')){
+ 	document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية "; 	
+   	}
+
+   	if(document.getElementById('pneu-dabi')){
+ 	document.getElementById('pneu-dabi').innerText="مصنع الخرسانة الهوائية "; 	
+   	}
+
+ 
+       if(document.getElementById('homie')){
+      document.getElementById('homie').innerText="Main";
+     }
+     if(document.getElementById('dbname')){
+       
+        document.getElementById('dbname').innerText="مجموعة ظبي";}
+
+
+/*Setting End*/
 
    }
    
    if(xesc=="en"){
-   	document.getElementById('Exxonmobile1').style.paddingLeft='0%';
-   	document.getElementById('Caddesi1').style.paddingLeft='0%';
-document.getElementById('ankara1').style.paddingLeft='0%'; 
-document.getElementById('izmir1').style.paddingLeft='0%';
-document.getElementById('boutiques').style.paddingLeft='0%';
-   	document.getElementById('align-txts').style.paddingLeft='0%';
-   	document.getElementById('align-txtts').style.paddingLeft='0%';
-   	document.getElementById('align-tx').style.paddingLeft='0%';
-    document.getElementById('align-tx1').style.paddingLeft='0%';
-     document.getElementById('align-tx2').style.paddingLeft='0%';
-     document.getElementById('align-tx3').style.paddingLeft='0%';
- document.getElementById('vkkasian').style.paddingLeft='0%';
- document.getElementById('OXY1').style.paddingLeft='0%';
-   	
-   
-        document.getElementById('pneu-dabii').innerText="AAC Factory";
-     document.getElementById('pneu-dabiii').innerText="AAC Factory";
-      document.getElementById('homie').innerText="Home";
-     
-       document.getElementById('pneu-dabi').innerText="AAC Factory";
-        document.getElementById('dbname').innerText="Dhabi Group";
+   	$('.mobile-menu').load(location.href + " .mobile-menu");
+   	langs=xesc;
+  console.log(langs);
+/*
+english settings config
+*/
 
-   }
+   	if(document.getElementById('Exxonmobile1')){
+ document.getElementById('Exxonmobile1').style.paddingLeft='0%';	
+   	}
+
+   		if(document.getElementById('Caddesi1')){
+ 	document.getElementById('Caddesi1').style.paddingLeft='0%';	
+   	}
+  
+  if(document.getElementById('ankara1')){
+ 	document.getElementById('ankara1').style.paddingLeft='0%'; 	
+   	}
+
+
+ if(document.getElementById('izmir1')){
+ 	document.getElementById('izmir1').style.paddingLeft='0%';
+   	}
+
+   	 if(document.getElementById('boutiques')){
+ 	document.getElementById('boutiques').style.paddingLeft='0%'; 	
+   	}
+
+   	 if(document.getElementById('align-txts')){
+ 	document.getElementById('align-txts').style.paddingLeft='0%'; 	
+   	}
+
+   	 if(document.getElementById('align-txtts')){
+ 	document.getElementById('align-txtts').style.paddingLeft='0%'; 	
+   	}
+
+
+
+   	if(document.getElementById('align-tx')){
+ 	document.getElementById('align-tx').style.paddingLeft='0%'; 	
+   	}
+
+	if(document.getElementById('align-tx1')){
+ 	document.getElementById('align-tx').style.paddingLeft='0%'; 	
+   	}
+
+	if(document.getElementById('align-tx2')){
+ 	document.getElementById('align-tx').style.paddingLeft='0%'; 	
+   	}
+
+	if(document.getElementById('align-tx3')){
+ 	document.getElementById('align-tx').style.paddingLeft='0%'; 	
+   	}
+
+   	if(document.getElementById('vkkasian')){
+ 	document.getElementById('vkkasian').style.paddingLeft='0%'; 	
+   	}
+
+   	if(document.getElementById('OXY1')){
+ 	document.getElementById('OXY1').style.paddingLeft='0%'; 	
+   	}
+
+if(document.getElementById('pneu-dabii')){
+ 	document.getElementById('pneu-dabii').innerText="AAC Factory"; 	
+   	}
+
+   	if(document.getElementById('pneu-dabiii')){
+ 	document.getElementById('pneu-dabiii').innerText="AAC Factory"; 	
+   	}
+
+   	if(document.getElementById('pneu-dabi')){
+ 	document.getElementById('pneu-dabi').innerText="AAC Factory"; 	
+   	}
+
+ 
+       if(document.getElementById('homie')){
+      document.getElementById('homie').innerText="Home";
+     }
+     if(document.getElementById('dbname')){
+   document.getElementById('dbname').innerText="Dhabi Group";}
+}
+   /*
+arabic settings end
+*/
 });
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
@@ -93,22 +236,21 @@ document.getElementById('boutiques').style.paddingLeft='0%';
 
 	//Mobile Nav Hide Show
 	if($('.mobile-menu').length){
-		if(document.getElementById('homie').innerText="مسكن"){
-        document.getElementById('homie').innerText="الرئيسية";
-         document.getElementById('pneu-dabii').innerText="مصنع الخرسانة الهوائية ";
-     document.getElementById('pneu-dabiii').innerText="مصنع الخرسانة الهوائية ";
-    };
-    if(document.getElementById('homie').innerText="Main"){
-        document.getElementById('homie').innerText="اHome";
-        
-    };
+
+   /*	if(document.getElementById('pneu-dabiii')){
+ 	document.getElementById('pneu-dabiii').innerText="AAC Factory"; 	
+   	}
+
+   	if(document.getElementById('pneu-dabii')){
+ 	document.getElementById('pneu-dabii').innerText="AAC Factory"; 	
+   	}*/
 
 		$('.mobile-menu .menu-box').mCustomScrollbar();
-		
 		var mobileMenuContent = $('.main-header .menu-area .main-menu').html();
 		//console.log(mobileMenuContent);
 		$('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
-		$('.sticky-header .main-menu').append(mobileMenuContent);
+		//$('.sticky-header .main-menu').append(mobileMenuContent);
+
 		
 		//Dropdown Button
 		$('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
