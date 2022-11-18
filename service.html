@@ -511,9 +511,9 @@ function setCookie(key, value, expiry) {
   document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
 }
 function googleTranslateElementInit() {
-    setCookie('googtrans', '/en/ar',1);
+    setCookie('googtrans', '/ar/en',1);
     new google.translate.TranslateElement({
-       pageLanguage: 'en', includedLanguages : 'en,ar', autoDisplay: false
+        includedLanguages : 'ar,en', autoDisplay: false
     }, 'google_translate_element');
 }
  
